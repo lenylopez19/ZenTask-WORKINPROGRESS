@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 05, 2023 at 05:46 PM
+-- Generation Time: Jul 05, 2023 at 06:18 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -31,7 +31,7 @@ CREATE TABLE `todo` (
   `id` int(11) NOT NULL,
   `task` varchar(255) NOT NULL,
   `taskType` varchar(9) NOT NULL,
-  `busy` varchar(4) NOT NULL,
+  `busy` varchar(4) DEFAULT NULL,
   `completed` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -40,11 +40,11 @@ CREATE TABLE `todo` (
 --
 
 INSERT INTO `todo` (`id`, `task`, `taskType`, `busy`, `completed`) VALUES
-(1, 'make the \"done\" functionality on my todo task app.', '', '', 1),
-(2, 'make the \"done\" state persist between runs by adding it to the data base', '', '', 1),
-(3, 'Fix minor ui bugs 🐞 ', '', '', 0),
-(4, 'Grab a beer 🍺 ', '', '', 1),
-;
+(1, 'make the \"done\" functionality on my todo task app.', 'user', '', 1),
+(2, 'make the \"done\" state persist between runs by adding it to the data base', 'user', '', 1),
+(3, 'Fix minor ui bugs 🐞 ', 'user', '', 0),
+(4, 'Grab a beer 🍺 ', 'user', '', 0),
+(5, 'Cut the grass 🌱', 'user', NULL, 0);
 
 --
 -- Indexes for dumped tables
@@ -64,7 +64,7 @@ ALTER TABLE `todo`
 -- AUTO_INCREMENT for table `todo`
 --
 ALTER TABLE `todo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=103;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
