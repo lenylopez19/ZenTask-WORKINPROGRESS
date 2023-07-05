@@ -7,14 +7,14 @@ By incorporating mindfulness into your to-do list, ZenTask empowers you to culti
 
 currently maded with html, css, js/jquery, php/mysql, this is still a work in progress 
 
-# tecnologies
+# technologies
 
-- html
-- css
-- javascript
-- jquery
-- php
-- mysql
+- Html
+- Css
+- Javascript
+- Jquery
+- Php
+- Mysql
 
 # screenshots
 
