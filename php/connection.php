@@ -2,7 +2,7 @@
  $server= "127.0.0.1";
  $user="root";
  $pass="";
- $db="simpleToDo";
+ $db="simpleTodo";
 
  $connection = new mysqli($server,$user,$pass,$db);
  

@@ -9,32 +9,51 @@
     <script src="js/jquery-3-7.js" defer></script>
     <script src="js/logic.js" defer></script>
 </head>
-<body ontouchstart="">
+<body >
     <main id="appWrapper">
-        <h1>Simple To Do List</h1>
-        <div class="dayActionContainer">
+        <section class="appHeader">
+            <h1 class="appTitle">Simple To Do List</h1>
+            <button data-status="0" class="taskOptions">
+                Task options
+            </button>
+        </section>
+       
+        <!-- <div class="dayActionContainer">
             <div class="dailyTaskTitle">
                 Good action of the day
             </div>
             <button class="dailyTaskButton hoverable">Hug your significant other </button>
-        </div>
+        </div> -->
+        
         <section class="task__container">
-        
-             
+
+            <!-- <div class="rowItem">
+                <div class="optionMenu">
+                    <div class="important optionButton">! Important</div>
+                    <div class="edit optionButton">Edit</div>
+                    <div class="delete optionButton">Delete</div>
+                </div>
+                <div class="row_content">
+                    <span class="circle__icon"></span>
+                    <p>make the "done" function work</p>
+                </div>
+            </div> -->
             
+
         </section>
+
         
-        <section class="suggestion">
+        <!-- <section class="suggestion">
             <div>Suggested</div>
             <button class="suggestion-button hoverable">Take a 10 Min break +</button>
-        </section>
+        </section> -->
 
             <form id="taskForm" action="">
                 <input id="addTaskButton" class="addTaskButtonStyle hoverable" type="submit" value="+">
-                <input id="taskText" type="text" class="task__text">
+                <input id="taskText" type="text" class="task__text" placeholder="Write a task ... ">
             </form>
        
- 
+            
     </main>
 </body>
 </html>
